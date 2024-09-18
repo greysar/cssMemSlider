@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -25,7 +24,7 @@ body {
 }
 
 .container {
-    width: 1080px;
+    width: 67.5rem;
     margin: 0 auto;
 }
 
@@ -39,25 +38,25 @@ body {
 }
 
 .slider__title {
-    font-size: 56px;
+    font-size: 3.5rem;
     margin-top: auto;
-    margin-bottom: 32px;
+    margin-bottom: 2rem;
 }
 
 .slider__wrapper {
     width: 90%;
-    height: 600px;
+    height: 37.5rem;
     margin-bottom: auto;
 }
 
 .slider__slides {
     width: 100%;
-    height: 500px;
+    height: 31.25rem;
     display: flex;
     align-items: center;
     transition: all 0.5s ease;
-    border: 1px solid var(--color-blue);
-    border-radius: 20px;
+    border: 0.0625rem solid var(--color-blue);
+    border-radius: 1.25rem;
     background-color: var(--color-black);
     overflow: hidden;
 }
@@ -104,7 +103,7 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    padding: 0.625rem;
 }
 
 .names {
@@ -117,8 +116,8 @@ body {
 
 .slide-names {
     min-width: 100%;
-    font-size: 20px;
-    transition: all 0.3s ease;
+    font-size: 1.25rem;
+    transition: all 0.5s ease;
 }
 
 .nav {
@@ -128,8 +127,8 @@ body {
 }
 
 .nav__circle-wpapper {
-    width: 40px;
-    height: 45px;
+    width: 2.5rem;
+    height: 2.8125rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -138,12 +137,12 @@ body {
 
 .nav__circle-wpapper:hover .nav__circle {
     background-color: var(--color-light-blue);
-    border: 1px solid var(--color-white);
+    border: 0.0625rem solid var(--color-white);
 }
 
 .nav__circle {
-    width: 30px;
-    height: 30px;
+    width: 1.875rem;
+    height: 1.875rem;
     border-radius: 50%;
     background-color: var(--color-blue);
     transition: 0.3s;
@@ -213,7 +212,7 @@ body {
 @media (max-width: 520px) {
     .slider__options {
         width: 100%;
-        flex-direction: column;
+        flex-direction: column-reverse;
         justify-content: space-between;
         align-items: center;
         padding: 0;
@@ -223,8 +222,9 @@ body {
         width: 100%;
     }
 
-    .names, .nav {
-        margin-top: 10px;
+    .names,
+    .nav {
+        margin-top: 0.625rem;
     }
 
     .slide-names {
@@ -234,15 +234,15 @@ body {
 }
 
 @media (max-width: 420px) {
-   .slider__title {
-       font-size: 32px;
-   }
+    .slider__title {
+        font-size: 2rem;
+    }
 
-   .slider__wrapper {
-       height: 500px;
-   }
+    .slider__wrapper {
+        height: 31.25rem;
+    }
 
-   .slider__slides {
-       height: 400px;
-   }
+    .slider__slides {
+        height: 25rem;
+    }
 }
