@@ -14,6 +14,7 @@
     --color-light-blue: #7f85dd;
     --color-light-red: #ff5353;
     --color-black: #181616;
+    --color-transperent: transperent;
 }
 
 body {
@@ -136,8 +137,16 @@ body {
 }
 
 .nav__circle-wpapper:hover .nav__circle {
+    background-color: var(--color-white);
+    /* border: 0.0625rem solid var(--color-white); */
+}
+
+.nav__circle-wpapper:active .nav__circle {
     background-color: var(--color-light-blue);
-    border: 0.0625rem solid var(--color-white);
+}
+
+input:checked~.slider__wrapper .nav .nav__circle-wpapper:hover .nav__circle {
+    border-color: var(--color-white) !important;
 }
 
 .nav__circle {
@@ -156,19 +165,23 @@ body {
 }
 
 #si-1:checked~.slider__wrapper .slider__options .nav .nav-c-1 .nav__circle {
-    background-color: var(--color-white);
+    background-color: var(--color-transperent);
+    border: 0.125rem solid var(--color-blue);
 }
 
 #si-2:checked~.slider__wrapper .slider__options .nav .nav-c-2 .nav__circle {
-    background-color: var(--color-white);
+    background-color: var(--color-transperent);
+    border: 0.125rem solid var(--color-blue);
 }
 
 #si-3:checked~.slider__wrapper .slider__options .nav .nav-c-3 .nav__circle {
-    background-color: var(--color-white);
+    background-color: var(--color-transperent);
+    border: 0.125rem solid var(--color-blue);
 }
 
 #si-4:checked~.slider__wrapper .slider__options .nav .nav-c-4 .nav__circle {
-    background-color: var(--color-white);
+    background-color: var(--color-transperent);
+    border: 0.125rem solid var(--color-blue);
 }
 
 #si-1:checked~.slider__wrapper .slider__slides .p1 {
